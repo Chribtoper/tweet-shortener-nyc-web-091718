@@ -15,6 +15,14 @@ hash = {
 end
 
 def word_substituter(input)
-  list = input.split(/ /,/,/)
-
+  list = input.split(/ /)
+  keys = dictionary.keys
+  list.each do |word|
+    keys.each do |x|
+      if word == x
+        word = dictionary[x]
+      end
+    end
+  end
+  list = input.join(/,/)
 end
