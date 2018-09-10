@@ -24,7 +24,6 @@ def word_substituter(input)
     else
       word
     end
-    end
   end
   list.join(" ")
 end
