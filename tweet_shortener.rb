@@ -20,7 +20,7 @@ def word_substituter(input)
   answer = []
   list.each do |word|
     if word_keys.include?(word) == true
-        word = dictionary[word].downcase
+        word << dictionary[word].downcase
     end
   end
   list.join(" ")
