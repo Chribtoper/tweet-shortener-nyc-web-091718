@@ -21,6 +21,8 @@ def word_substituter(input)
   list.map do |word|
     word_keys.include?(word)
       word = dictionary[word]
+    else
+      word
     end
   end
   list.join(" ")
