@@ -15,7 +15,7 @@ hash = {
 end
 
 def word_substituter(input)
-  list = input.split(/ /)
+  list = input.split(" ")
   keys = dictionary.keys
   list.each do |word|
     keys.each do |x|
@@ -24,5 +24,5 @@ def word_substituter(input)
       end
     end
   end
-  list.join(/,/)
+  list.join(" ")
 end
