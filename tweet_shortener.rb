@@ -17,12 +17,12 @@ end
 def word_substituter(input)
   list = input.split(" ")
   answer = []
-  list.map do |word|
+  newlist = list.map do |word|
     if dictionary.keys.include?(word.downcase)
       word = dictionary[word.downcase]
     else
       word
     end
   end
-  list.join(" ")
+  newlist.join(" ")
 end
