@@ -34,7 +34,7 @@ end
 
 def selective_tweet_shortener(tweets)
   if tweets.size > 140
-    tweets.map do |tweet|
+    new_tweets = tweets.map do |tweet|
       word_substituter(tweet)
     end
   end
