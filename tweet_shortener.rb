@@ -40,4 +40,5 @@ def selective_tweet_shortener(tweets)
       tweet
     end
   end
+  new_tweets
 end
