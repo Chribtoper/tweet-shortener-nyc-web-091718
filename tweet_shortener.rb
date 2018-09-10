@@ -24,5 +24,5 @@ def word_substituter(input)
       end
     end
   end
-  list = input.join(/,/)
+  list.join(/,/)
 end
