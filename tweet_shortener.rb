@@ -9,12 +9,12 @@ hash = {
 'four' => '4',
 'be' => 'b',
 'you' => 'u',
-"at" => "@", 
+"at" => "@",
 "and" => "&"
 }
 end
 
 def word_substituter(input)
   list = input.split(/ /,/,/)
-  
+
 end
