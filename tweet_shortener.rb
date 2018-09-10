@@ -17,6 +17,7 @@ end
 def word_substituter(input)
   list = input.split(" ")
   word_keys = dictionary.keys
+  answer = []
   list.each do |word|
     if word_keys.include?(word) == true
         word = dictionary[word].downcase
