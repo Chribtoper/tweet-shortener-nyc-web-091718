@@ -3,8 +3,8 @@ def dictionary
 hash = {
 "hello" => 'hi',
 'to' => '2',
-'two' => '2', 
-'too' => '2', 
+'two' => '2',
+'too' => '2',
 'for' => '2',
 'four' => '4',
 'be' => 'b',
@@ -15,5 +15,5 @@ hash = {
 end
 
 def word_substituter
-  
+
 end
