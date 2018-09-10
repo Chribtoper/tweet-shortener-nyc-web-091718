@@ -25,3 +25,5 @@ def word_substituter(input)
   end
   newlist.join(" ")
 end
+
+def bulk_tweet_shortener
