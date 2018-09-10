@@ -16,10 +16,9 @@ end
 
 def word_substituter(input)
   list = input.split(" ")
-  word_keys = dictionary.keys
   answer = []
   list.map do |word|
-    if word_keys.include?(word.downcase)
+    if dictionary.keys.include?(word.downcase)
       word = dictionary[word.downcase]
     else
       word
