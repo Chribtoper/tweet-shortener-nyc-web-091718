@@ -21,5 +21,6 @@ def word_substituter(input)
     if word_keys.include?(word) == true
         word = dictionary[word].downcase
     end
+  end
   list.join(" ")
 end
