@@ -14,6 +14,7 @@ hash = {
 }
 end
 
-def word_substituter
-
+def word_substituter(input)
+  list = input.split(/ /,/,/)
+  
 end
