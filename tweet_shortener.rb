@@ -16,13 +16,10 @@ end
 
 def word_substituter(input)
   list = input.split(" ")
-  keys = dictionary.keys
+  word_keys = dictionary.keys
   list.each do |word|
-    keys.each do |x|
-      if word == x
-        word = dictionary[x]
-      end
+    if word_keys.include?(word) == true
+        word = dictionary[word].downcase
     end
-  end
   list.join(" ")
 end
