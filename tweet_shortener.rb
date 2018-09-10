@@ -17,8 +17,8 @@ end
 def word_substituter(input)
   list = input.split(" ")
   newlist = list.map do |word|
-    if dictionary.keys.include?(word)
-      word = dictionary[word]
+    if dictionary.keys.include?(word.downcase)
+      word = dictionary[word.downcase]
     else
       word
     end
@@ -26,4 +26,8 @@ def word_substituter(input)
   newlist.join(" ")
 end
 
-def bulk_tweet_shortener
+def bulk_tweet_shortener(tweets)
+  new_tweets = tweets.map do |tweet|
+    word_substituter(tweet)
+  end
+end
