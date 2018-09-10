@@ -19,7 +19,7 @@ def word_substituter(input)
   word_keys = dictionary.keys
   answer = []
   list.map do |word|
-    word_keys.include?(word)
+    if word_keys.include?(word)
       word = dictionary[word]
     else
       word
